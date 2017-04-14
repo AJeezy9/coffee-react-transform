@@ -8,21 +8,19 @@
     "cjsx",
     "coffee-react"
   ],
-  "author": ["cia48621793", "James Friend"],
+  "author": [
+    "cia48621793",
+    "James Friend"
+  ],
   "version": "0.0.1",
   "licenses": "MIT",
   "scripts": {
-    "test": "cake build && cake test",
-    "prepublish": "cake build"
+    "test": "coffee test/test.coffee"
   },
   "files": [
     "index.js",
-    "lib/",
-    "bin/"
+    "src/"
   ],
-  "bin": {
-    "cjsx-transform": "./bin/cjsx-transform"
-  },
   "devDependencies": {
     "coffeescript": "next",
     "colors": "^0.6.2",

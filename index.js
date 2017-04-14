@@ -1,1 +1,2 @@
-module.exports = require('./lib/transformer').transform;
+require('coffeescript/register');
+module.exports = require('./src/transformer').transform;

@@ -1,7 +1,7 @@
-require('coffee-script').register()
+require('coffeescript').register()
 fs = require 'fs'
 {exec} = require 'child_process'
-coffeeCompile = require('coffee-script').compile
+coffeeCompile = require('coffeescript').compile
 
 require 'colors'
 jsdiff = require 'diff'
@@ -71,7 +71,7 @@ testTypes =
           text[color]
         ).join('')
 
-      message = 
+      message =
         """
 
         #{testcase.desc}
@@ -130,5 +130,3 @@ runTestcases = (type, filepath) ->
   console.timeEnd("#{type} tests passed")
 
 run() # begin
-
-

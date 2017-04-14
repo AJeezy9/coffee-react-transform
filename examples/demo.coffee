@@ -1,7 +1,7 @@
 
-{Parser, serialise, transform} = require '../lib/transformer'
+{Parser, serialise, transform} = require '../src/transformer'
 
-coffeeCompile = require('coffee-script').compile
+coffeeCompile = require('coffeescript').compile
 
 fs = require 'fs'
 
@@ -20,4 +20,3 @@ console.log(coffeeCompile(coffeescriptCode))
 end = new Date()
 
 console.log "done in #{end - start}ms"
-
